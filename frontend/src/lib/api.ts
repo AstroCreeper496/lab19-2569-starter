@@ -3,7 +3,7 @@ import axios, { AxiosError, type Method } from "axios";
 import { useAuthStore } from "@/lib/auth-store";
 
 export const API_URL =
-  import.meta.env.VITE_API_URL ?? "http://localhost:3000/api/v3";
+  import.meta.env.VITE_API_URL ?? "http://:3000/api/v3";
 
 export class ApiError extends Error {
   status: number;
